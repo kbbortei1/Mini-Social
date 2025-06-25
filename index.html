@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Social</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <h1 class="logo">Mini Social</h1>
+    </div>
+    <div class="header-center">
+      <div class="search-container">
+        <span class="icon">🔍</span>
+        <input type="text" placeholder="Search Mini Social" class="search-input">
+      </div>
+    </div>
+    <div class="header-right">
+      <button class="header-btn">➕</button>
+      <button class="header-btn">💬</button>
+      <button class="header-btn notification-btn">
+        🔔
+        <span class="notification-badge">3</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="main-container">
+
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">🏠 <span>Home</span></a>
+        <a href="#" class="nav-item">👥 <span>Friends</span></a>
+        <a href="#" class="nav-item">🔔 <span>Notifications</span><span class="nav-badge">3</span></a>
+        <a href="#" class="nav-item">✉️ <span>Messages</span></a>
+        <a href="#" class="nav-item">🔖 <span>Saved</span></a>
+        <a href="#" class="nav-item">⚙️ <span>Settings</span></a>
+      </nav>
+      <div class="user-profile">
+        <img src="https://i0.wp.com/ghana.dubawa.org/wp-content/uploads/2023/08/John-Mahama-did-not-call-for-sports-betting-ban.jpg?w=600&ssl=1" alt="John Doe" class="user-avatar">
+        <span class="user-name">John Mahama</span>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Post Creator -->
+      <div class="post-creator">
+        <div class="post-input-container">
+          <img src="https://i.pravatar.cc/40?img=1" alt="User" class="avatar"  class="post-avatar">
+          <input type="text" placeholder="What's on your mind?" class="post-input">
+        </div>
+        <div class="post-actions">
+          <button class="post-action-btn live-video">📹 <span>Live Video</span></button>
+          <button class="post-action-btn photo-video">🖼️ <span>Photo/Video</span></button>
+          <button class="post-action-btn feeling">😊 <span>Feeling/Activity</span></button>
+        </div>
+      </div>
+
+      <!-- Stories -->
+      <div class="stories-container">
+        <div class="story-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+          <img src="https://i.pravatar.cc/50?img=2" alt="Sarah Johnson" class="story-avatar">
+          <span class="story-name">Sarah Johnson</span>
+        </div>
+        <div class="story-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+          <img src="https://i.pravatar.cc/50?img=3" alt="Mike Chen" class="story-avatar">
+          <span class="story-name">Mike Chen</span>
+        </div>
+        <div class="story-card" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+          <img src="https://i.pravatar.cc/50?img=4" alt="Emma Wilson" class="story-avatar">
+          <span class="story-name">Emma Wilson</span>
+        </div>
+        <div class="story-card" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+          <img src="https://i.pravatar.cc/50?img=5" alt="David Kim" class="story-avatar">
+          <span class="story-name">David Kim</span>
+        </div>
+        <div class="story-card" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);">
+          <img src="https://i.pravatar.cc/50?img=6" alt="Lisa Wong" class="story-avatar">
+          <span class="story-name">Lisa Wong</span>
+        </div>
+      </div>
+
+      <!-- Posts Feed -->
+      <div class="posts-feed">
+<!-- Post 1 -->
+<div class="post">
+  <div class="post-header">
+    <img src="https://i.pravatar.cc/50?img=1" alt="Sarah Johnson" class="post-user-avatar">
+    <div class="post-user-info">
+      <h4 class="post-user-name">Sarah Johnson</h4>
+      <span class="post-time">2 hours ago</span>
+    </div>
+    <button class="post-menu-btn">⋯</button>
+  </div>
+  <div class="post-content">
+    <p>Just finished my morning hike! The view was absolutely breathtaking. Nature always finds a way to inspire and rejuvenate the soul. 🌄✨</p>
+    
+    <!-- Post image inserted here -->
+    <div class="post-image">
+      <img src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-5f58-61fd-9a63-9a1d612d2c42/raw?se=2025-06-25T10%3A56%3A46Z&sp=r&sv=2024-08-04&sr=b&scid=328c07cc-f711-59ea-b427-51ae0d9e507a&skoid=82a3371f-2f6c-4f81-8a78-2701b362559b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-25T03%3A46%3A23Z&ske=2025-06-26T03%3A46%3A23Z&sks=b&skv=2024-08-04&sig=rt4tDgZSAM%2BZkPF8oIT7%2B/V%2B0cjGnmguBB8qlfgjlPQ%3D" alt="Forest road at sunset" class="post-img" width="50%" height="50%">
+    </div>
+  </div>
+</div>
+
+<div class="post">     
+  <div class="stats">
+    <div><span>👍</span> <span id="likes">24</span></div>
+    <div><span id="comments">8</span> comments • <span id="shares">2</span> shares</div>
+  </div>
+  
+  <div class="buttons">
+    <button id="like-btn">👍 Like</button>
+    <button id="comment-btn">💬 Comment</button>
+    <button id="share-btn">🔗 Share</button>
+  </div>
+</div>
+
+        <!-- Post 2 -->
+        <div class="post">
+          <div class="post-header">
+            <img src="/placeholder.svg?height=40&width=40" alt="Emma Wilson" class="post-user-avatar">
+            <div class="post-user-info">
+              <h4 class="post-user-name">Emma Wilson</h4>
+              <span class="post-time">1 day ago</span>
+            </div>
+            <button class="post-menu-btn">⋯</button>
+          </div>
+          <div class="post-content">
+            <p>Recipe for my famous chocolate chip cookies! 🍪 Ingredients: 2 1/4 cups flour, 1 tsp baking soda, 1 tsp salt, 1 cup butter, 3/4 cup sugar, 3/4 cup brown sugar, 2 eggs, 2 cups chocolate chips. Bake at 375°F for 9-11 minutes. Enjoy!</p>
+            <div class="post-image">
+              <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Chocolate chip cookies" class="post-img">
+            </div>
+          </div>
+        </div>
+     <div class="post">     
+        <div class="stats">
+            <div><span>👍</span> <span id="likes">24</span></div>
+            <div><span id="comments">8</span> comments • <span id="shares">2</span> shares</div>
+        </div>
+        
+        <div class="buttons">
+            <button id="like-btn">👍 Like</button>
+            <button id="comment-btn">💬 Comment</button>
+            <button id="share-btn">🔗 Share</button>
+        </div>
+        </div>
+
+      <!-- Loading indicator -->
+      <div class="loading-indicator">
+        <div class="spinner"></div>
+      </div>
+    </main>
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+
+      <!-- Sponsored -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Sponsored</h3>
+        <div class="sponsored-ad">
+          <img src="https://media.istockphoto.com/id/1197832105/vector/male-hand-holding-megaphone-with-new-product-speech-bubble-loudspeaker-banner-for-business.jpg?s=1024x1024&w=is&k=20&c=yA3bC3qNuP8Kur0lZgpAwooYd5IGU0FlVLT17H2V8TQ=" alt="Ad" class="ad-image">
+          <div class="ad-content">
+            <h4 class="ad-title">Try our new product</h4>
+            <p class="ad-description">example.com</p>
+          </div>
+        </div>
+        <div class="sponsored-ad">
+          <img src="https://cdn.vectorstock.com/i/1000x1000/55/67/get-extra-50-percent-off-sale-discount-offer-sign-vector-37455567.webp" alt="Ad" class="ad-image">
+          <div class="ad-content">
+            <h4 class="ad-title">Summer Sale 50% Off</h4>
+            <p class="ad-description">shop.example.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Birthdays -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Birthdays</h3>
+        <div class="birthday-item">
+          <span class="birthday-icon">🎂</span>
+          <p><strong>Alex Morgan</strong> and <strong>2 others</strong> have birthdays today.</p>
+        </div>
+      </div>
+
+      <!-- Contacts -->
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Contacts</h3>
+        <div class="contacts-list">
+          <div class="contact-item">
+            <img src="https://media.istockphoto.com/id/495508534/photo/aerial-view-on-spacious-pine-forest-at-sunrise.jpg?s=612x612&w=0&k=20&c=NUGzlDoCT9JzRtZW3Z8fGIImOZZhA4bBSHiTKQgHJHU=" alt="Sarah Johnson" class="contact-avatar">
+            <span class="contact-name">Sarah Johnson</span>
+            <div class="online-indicator"></div>
+          </div>
+          <div class="contact-item">
+            <img src="https://www.shutterstock.com/shutterstock/photos/1068764849/display_1500/stock-photo-bright-morning-sun-1068764849.jpg" alt="Mike Chen" class="contact-avatar">
+            <span class="contact-name">Mike Chen</span>
+            <div class="online-indicator"></div>
+          </div>
+          <div class="contact-item">
+            <img src="https://i.pinimg.com/736x/d7/70/65/d7706555a0939177b2bb73d3a206341b.jpg" alt="John Cena" class="contact-avatar">
+            <span class="contact-name">John Cena</span>
+          </div>
+          <div class="contact-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Roman_Reigns_RR25_%281%29_%28headshot%29.jpg/500px-Roman_Reigns_RR25_%281%29_%28headshot%29.jpg" alt="David Kim" class="contact-avatar">
+            <span class="contact-name">Roman Reigns</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
