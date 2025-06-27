@@ -20,3 +20,8 @@ likeButton.addEventListener('click', function() {
     // Update the counter
     likesCount.textContent = currentLikes;
 });
+const notifBtn = document.querySelector(".notification-btn");
+
+notifBtn.addEventListener("click", function() {
+  alert("You have 3 notifications");
+});
